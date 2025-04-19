@@ -14,6 +14,22 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 model = genai.GenerativeModel("models/gemini-1.5-flash-latest")
 
 def get_gemini_response(input_prompt, image_data):
+/*************  ✨ Windsurf Command ⭐  *************/
+    """
+    Queries the Gemini LLM model with the given input prompt and image data.
+
+    Args:
+        input_prompt (str): The text prompt to query the model with.
+        image_data (bytes): The image data to query the model with.
+
+    Returns:
+        str: The response from the Gemini model.
+
+    Raises:
+        Exception: If the request to the Gemini model failed.
+    """
+    
+/*******  72798776-c68a-4d00-82be-0a041a207ac3  *******/
     contents = []
     if input_prompt:
         contents.append(input_prompt)
